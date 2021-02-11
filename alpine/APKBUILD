@@ -28,11 +28,11 @@ check() {
 }
 
 package() {
-	install -D -m644 "$srcdir"/$pkgname-$branch/change-background "$pkgdir"/usr/bin/change-background
+	install -D -m755 "$srcdir"/$pkgname-$branch/change-background "$pkgdir"/usr/bin/change-background
 	install -D -m644 "$srcdir"/change-background.desktop "$pkgdir"/usr/share/applications/change-background.desktop
 }
 
 sha512sums="
 56938fca483b58b314ff2511ae190499f43a81fe0ac8993c18b3197775022510166c0e52e30b2a6866f5017183b26d67c7f85fdc50ead537f9fd4fe6f1f49e2d  main.zip
-ddca73bb65f0be2bc8f7b9f3a767b94e41e4150e79dba715c6282b78381baa2ea62a4b3b047c4d1fff3fee5036b2d7a0e392dbd52914916042e23f0de09c51a4  change-background.desktop
+5ec26267839a01bfba2f4bd40dfb6eb293afc23598070bc8e1bbc7a9588c4b2deb236e6e59f205c23ea5da962088cbc5bb97eb1c6f0788f534d13a5b2c16adbf  change-background.desktop
 "
