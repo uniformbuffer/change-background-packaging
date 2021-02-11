@@ -13,7 +13,7 @@ Name=Change background
 Comment=Simple script to change background image with Zenity
 
 # The path to the folder in which the executable is run
-Path=/usr/bin/change-background
+Path=/usr/bin/
 
 # The executable of the application, possibly with arguments.
 Exec=change-background

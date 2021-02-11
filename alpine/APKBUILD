@@ -8,7 +8,7 @@ pkgdesc="Simple script to change background image with Zenity"
 url="https://github.com/uniformbuffer/change-background"
 arch="all"
 license="GPL-3.0"
-depends="zenity glib"
+depends="zenity glib gawk"
 makedepends=""
 install=""
 subpackages=""
@@ -33,6 +33,6 @@ package() {
 }
 
 sha512sums="
-56938fca483b58b314ff2511ae190499f43a81fe0ac8993c18b3197775022510166c0e52e30b2a6866f5017183b26d67c7f85fdc50ead537f9fd4fe6f1f49e2d  main.zip
-5ec26267839a01bfba2f4bd40dfb6eb293afc23598070bc8e1bbc7a9588c4b2deb236e6e59f205c23ea5da962088cbc5bb97eb1c6f0788f534d13a5b2c16adbf  change-background.desktop
+e5ada05e74ae8ceaadc470560f053da4f7fe69ff55d55a302f0859f04b22e1a47bca6cbf848a5af99eacfe02bee320e18e8f5fa6370e4f892e25ba3ffd6a8c3e  main.zip
+af5697de93eb93305b307eba1d3d30ddf9deb45125782e8cff5d16d2e9a2c8389a618a0fdbdb11c74fcdf44ec0a534f03c84580691bcf0f4880bc662ef3ac453  change-background.desktop
 "
