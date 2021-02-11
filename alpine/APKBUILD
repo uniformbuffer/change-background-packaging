@@ -1,0 +1,38 @@
+# Contributor:
+# Maintainer:
+pkgname=change-background
+branch=main
+pkgver=0
+pkgrel=0
+pkgdesc="Simple script to change background image with Zenity"
+url="https://github.com/uniformbuffer/change-background"
+arch="all"
+license="GPL-3.0"
+depends="zenity glib"
+makedepends=""
+install=""
+subpackages=""
+source="https://github.com/uniformbuffer/$pkgname/archive/$branch.zip
+	change-background.desktop
+	"
+#builddir="$srcdir/"
+
+build() {
+	# It is a simple shell script, no build involved
+	:
+}
+
+check() {
+	# Replace with proper check command(s)
+	:
+}
+
+package() {
+	install -D -m644 "$srcdir"/$pkgname-$branch/change-background "$pkgdir"/usr/bin/change-background
+	install -D -m644 "$srcdir"/change-background.desktop "$pkgdir"/usr/share/applications/change-background.desktop
+}
+
+sha512sums="
+56938fca483b58b314ff2511ae190499f43a81fe0ac8993c18b3197775022510166c0e52e30b2a6866f5017183b26d67c7f85fdc50ead537f9fd4fe6f1f49e2d  main.zip
+ddca73bb65f0be2bc8f7b9f3a767b94e41e4150e79dba715c6282b78381baa2ea62a4b3b047c4d1fff3fee5036b2d7a0e392dbd52914916042e23f0de09c51a4  change-background.desktop
+"
